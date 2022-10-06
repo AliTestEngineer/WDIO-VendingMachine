@@ -24,6 +24,7 @@
     "wdio-video-reporter": "^1.4.4"
   },
   "dependencies": {
-    "expect": "^29.1.2"
+    "expect": "^29.1.2",
+    "webdriverio": "^7.25.1"
   }
 }

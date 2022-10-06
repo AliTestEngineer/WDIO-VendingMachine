@@ -1,8 +1,5 @@
 
-
 const vendingPage1 = require('../pages/vendingMachine.page');
-
-import {expect as ChaiExpect } from 'chai';
 
 describe('Vending Machine Suite', () => {
   before(() => {
@@ -26,7 +23,9 @@ describe('Vending Machine Suite', () => {
     // Write test code here
   assert.equal(vendingPage1.headingText.getText(),'Vending Machine!'); 
    // const foundText = vendingPage1.headingText.getText();
-   // assert.equal(foundText,'Vending Machine!'); 
+   // assert.equal(foundText,'Vending Machine!');
+   
+   
   })
 
 
