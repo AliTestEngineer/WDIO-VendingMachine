@@ -1,5 +1,8 @@
- const { assert } = require('chai');
-const vendingPage = require('../pages/vendingMachine.page');
+
+
+const vendingPage1 = require('../pages/vendingMachine.page');
+
+import {expect as ChaiExpect } from 'chai';
 
 describe('Vending Machine Suite', () => {
   before(() => {
@@ -7,7 +10,7 @@ describe('Vending Machine Suite', () => {
   });
 
   beforeEach(() => {
-    browser.url ('')
+       browser.url('');
   });
 
   after(() => {
@@ -19,8 +22,12 @@ describe('Vending Machine Suite', () => {
     browser.pause(5000);
   });
 
-  it('should have correct heading text', () => {
+  it('should have correct heading text',  () => {
     // Write test code here
-    assert.equal (vendingPage.headingText.getText(),'Vending Machine')
-  });
+  assert.equal(vendingPage1.headingText.getText(),'Vending Machine!'); 
+   // const foundText = vendingPage1.headingText.getText();
+   // assert.equal(foundText,'Vending Machine!'); 
+  })
+
+
 });

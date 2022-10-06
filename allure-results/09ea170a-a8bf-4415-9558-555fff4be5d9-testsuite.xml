@@ -1,0 +1,210 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1665051268354' stop='1665051268500'>
+    <name>Vending Machine Suite</name>
+    <title>Vending Machine Suite</title>
+    <test-cases>
+        <test-case start='1665051268354' status='passed' stop='1665051268356'>
+            <name>"before all" hook</name>
+            <title>"before all" hook</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1665051268356' status='undefined'>
+            <name>should have correct heading text</name>
+            <title>should have correct heading text</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1665051268382' status='broken' stop='1665051268397'>
+            <name>should have correct heading text</name>
+            <title>should have correct heading text</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='argument' name='browserVersion' value='105.0.5195.127'/>
+            </parameters>
+            <steps>
+                <step start='1665051268386' status='broken' stop='1665051268397'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='9bd21ce3-91c3-4d6d-a23a-b7b2e56610e7-attachment.json' type='application/json' size='64'/>
+                    </attachments>
+                    <steps>
+                        <step start='1665051268392' status='broken' stop='1665051268397'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments/>
+                            <steps>
+                                <step start='1665051268393' status='broken' stop='1665051268397'>
+                                    <name>POST /session/:sessionId/element</name>
+                                    <title>POST /session/:sessionId/element</title>
+                                    <attachments>
+                                        <attachment title='Request' source='76aef93a-5045-4fa1-85bc-2ed2c4548a37-attachment.json' type='application/json' size='53'/>
+                                    </attachments>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1665051268402' status='undefined'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Execution video' source='1f2170fa-bed7-4fc2-b91e-5287e5b756f5-attachment.mp4' type='video/mp4' size='158'/>
+            </attachments>
+            <failure>
+                <message>vendingPage1.headingText.getText is not a function</message>
+                <stack-trace>TypeError: vendingPage1.headingText.getText is not a function
+                    at Context.&lt;anonymous> (D:\_Tech\_Code\WDIO-VendingMachine\WDIO-VendingMachine\tests\vendingMachine.spec.js:30:41)
+                    at Context.executeAsync (D:\_Tech\_Code\WDIO-VendingMachine\WDIO-VendingMachine\node_modules\@wdio\utils\build\shim.js:123:21)
+                    at Context.testFrameworkFnWrapper (D:\_Tech\_Code\WDIO-VendingMachine\WDIO-VendingMachine\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:55:28)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1665051268407' status='passed' stop='1665051268408'>
+            <name>"after each" hook</name>
+            <title>"after each" hook</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1665051268410' status='undefined'>
+            <name>getText</name>
+            <title>getText</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1665051268420' status='broken' stop='1665051268452'>
+            <name>getText</name>
+            <title>getText</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='argument' name='browserVersion' value='105.0.5195.127'/>
+            </parameters>
+            <steps>
+                <step start='1665051268421' status='broken' stop='1665051268452'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='aeffc0b0-356d-491d-9fb8-91ea6a344bc4-attachment.json' type='application/json' size='64'/>
+                    </attachments>
+                    <steps>
+                        <step start='1665051268424' status='broken' stop='1665051268452'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='7a05fc6f-4bff-4663-8223-8dc230bf951a-attachment.json' type='application/json' size='46'/>
+                            </attachments>
+                            <steps>
+                                <step start='1665051268435' status='broken' stop='1665051268452'>
+                                    <name>GET /session/:sessionId/screenshot</name>
+                                    <title>GET /session/:sessionId/screenshot</title>
+                                    <attachments/>
+                                    <steps>
+                                        <step start='1665051268436' status='broken' stop='1665051268452'>
+                                            <name>POST /session/:sessionId/url</name>
+                                            <title>POST /session/:sessionId/url</title>
+                                            <attachments>
+                                                <attachment title='Request' source='ab966695-616f-49be-af6a-3e80f1a18a90-attachment.json' type='application/json' size='55'/>
+                                            </attachments>
+                                            <steps/>
+                                        </step>
+                                    </steps>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1665051268472' status='undefined'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Execution video' source='bc6808cd-32af-492b-9332-4133e1daa863-attachment.mp4' type='video/mp4' size='133'/>
+            </attachments>
+            <failure>
+                <message>subHeading.getText is not a function</message>
+                <stack-trace>TypeError: subHeading.getText is not a function
+                    at Context.&lt;anonymous> (D:\_Tech\_Code\WDIO-VendingMachine\WDIO-VendingMachine\tests\vendingMachine.spec.js:42:23)
+                    at Context.executeAsync (D:\_Tech\_Code\WDIO-VendingMachine\WDIO-VendingMachine\node_modules\@wdio\utils\build\shim.js:123:21)
+                    at Context.testFrameworkFnWrapper (D:\_Tech\_Code\WDIO-VendingMachine\WDIO-VendingMachine\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:55:28)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1665051268490' status='passed' stop='1665051268491'>
+            <name>"after each" hook</name>
+            <title>"after each" hook</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1665051268494' status='passed' stop='1665051268495'>
+            <name>"after all" hook</name>
+            <title>"after all" hook</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
