@@ -1,4 +1,6 @@
 
+const { assert } = require('chai');
+const vendingMachinePage = require('../pages/vendingMachine.page');
 const vendingPage1 = require('../pages/vendingMachine.page');
 
 describe('Vending Machine Suite', () => {
@@ -19,14 +21,28 @@ describe('Vending Machine Suite', () => {
     browser.pause(5000);
   });
 
-  it('should have correct heading text',  () => {
-    // Write test code here
-  assert.equal(vendingPage1.headingText.getText(),'Vending Machine!'); 
-   // const foundText = vendingPage1.headingText.getText();
-   // assert.equal(foundText,'Vending Machine!');
-   
-   
-  })
+
+
+  it ('Assert',  () => {
+    //assert.equal(vendingPage1.headingText.getText(),'Vending')
+
+    let expectedText = "Vending Machine!"
+
+    let elementObject = browser.findElement('css selector', 'body > h1');
+// Considering 'page.pageElements.arMessage' is a valid selector for targeted element
+let foundText = browser.getElementText(elementObject.ELEMENT);
+
+  console.log(`Found the following text: ${foundText}`);
+  assert.equal(foundText, expectedText,'This is actually the ERROR message');
+
+  });
+
+ it ('Sonuc', async () => {
+    // Add code here
+    let elem1 = await $(vendingMachinePage.headingText.getText());
+    console.log(await elem1.getText());
+
+  });
 
 
 });
